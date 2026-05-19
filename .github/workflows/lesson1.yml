@@ -1,19 +1,17 @@
-name: Lesson 2
+name: Lesson 3
 
 on:
   push:
 
 jobs:
 
-  first-job:
+  learning-steps:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "This is the first job"
 
-  second-job:
-    needs: first-job
-    runs-on: ubuntu-latest
+      - run: echo "Step 1 starting"
 
-    steps:
-      - run: echo "This runs after first-job"
+      - run: echo "Step 2 running"
+
+      - run: echo "Step 3 complete"

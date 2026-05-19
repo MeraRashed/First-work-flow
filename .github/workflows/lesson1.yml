@@ -10,8 +10,14 @@ jobs:
 
     steps:
 
-      - run: echo "Step 1 starting"
+      - name: Welcome Step
+        run: echo "Robot started"
 
-      - run: echo "Step 2 running"
+      - name: Create Folder
+        run: mkdir my-folder
 
-      - run: echo "Step 3 complete"
+      - name: Show Files
+        run: ls
+
+      - name: Finish
+        run: echo "Workflow complete"
